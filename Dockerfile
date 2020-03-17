@@ -1,5 +1,6 @@
 FROM debian
 
+WORKDIR /workdir
 RUN apt-get update -qq \
   && apt-get install -y genisoimage \
   && apt-get purge -y --auto-remove \
